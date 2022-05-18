@@ -1,0 +1,20 @@
+Giới thiệu về toán tử trong js
+1) Toán tử số học
+2) Toán tử gán - assignment
+3) Toán tử so sánh - comparison
+4) Toán tử logic - logical
+
+Kiểu dữ liệu
+ - Nguyên thủy - primitive Data
+    + number
+    + string
+        Thêm dâu nháy kép trong nháy kép
+            "Em \"Cường"
+    + boolean
+    + underfined
+    + null
+    + symbol
+ - Dữ liệu phức tạp: complex Data
+    + function
+    + object
+

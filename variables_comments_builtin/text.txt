@@ -1,0 +1,8 @@
+- 1 số hàm built-in
+    alert
+    console
+    confirm: thông báo xác nhận
+    prompt: Xác nhận kèm dòng text input
+    set timeout: Chạy code sau 1 khoảng tgian
+    set interval: Gọi hàm trong các khoảng tgian xác định gọi hàm cho đến khi clearInterval()
+
