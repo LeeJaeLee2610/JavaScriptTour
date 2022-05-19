@@ -1,22 +1,22 @@
-var listC = document.querySelector("#list-courses")
+var listP = document.querySelector(".listP")
 
-var api = "http://127.0.0.1:5500/FetchAPI/demo.html"
+var api = "http://localhost:8080/Products";
 
 function start(){
-    getCourses(function(courses){
-        console.log(courses)
+    getProducts(function(products){
+        console.log(products)
     })
 }
 
 start()
 
-function getCourses(callback){
-    fetch(api).then(function(response){
+function getProducts(callback){
+    fetch('http://localhost:8080/Products')
+    .then(function(response){
         return response.json();
     })
-    .then(callback)
+    .then(callback);
 }
-
 // fetch("https://jsonplaceholder.typicode.com/todos")
 // .then(function(response){
 //     return response.json();
