@@ -1,0 +1,10 @@
+Các loại function:
+
+- declaration function
+- expression function
+- arrow function
+
+
+function showMes(){
+
+}
