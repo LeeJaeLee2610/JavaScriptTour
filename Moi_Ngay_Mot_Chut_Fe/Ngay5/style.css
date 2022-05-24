@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tab{
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+.btn-container{
+    display: flex;
+    text-align: center;
+}
+
+.btn-container .title:hover{
+    background-color: pink;
+}
+
+.active{
+    background-color: red;
+}
+
+.btn-container .title{
+    width: 200px;
+}
+
+.content{
+    display: none;
+}
+
+.active{
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    background-color: pink;
+}

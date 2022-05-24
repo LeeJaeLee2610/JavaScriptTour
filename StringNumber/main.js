@@ -6,3 +6,7 @@ console.log(fullName)
 // replace(/chuoi/g, 'chuoi'): Thay thế tất cả các chuỗi  trong chuỗi kí tự
 
 console.log(typeof NaN)
+
+var  title = "Nhin ne"
+
+console.log(title.includes("Nhin"))
