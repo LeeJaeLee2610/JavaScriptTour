@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch DemoApplication",
+            "request": "launch",
+            "mainClass": "springbootapi.demo.DemoApplication"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-FapiApplication<fapi>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
