@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch SpringapiApplication",
+            "request": "launch",
+            "mainClass": "com.example.springapi.SpringapiApplication",
+            "projectName": "springapi"
+        },
+        {
+            "type": "java",
             "name": "Launch DemoApplication",
             "request": "launch",
             "mainClass": "springbootapi.demo.DemoApplication"
