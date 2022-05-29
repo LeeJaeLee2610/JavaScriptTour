@@ -1,0 +1,31 @@
+JSON
+    - Là 1 định dạng dữ liệu (chuỗi)
+    - JS Object Notation
+    - JSON: Number, Boolean, Null, Array
+    - encode, decode
+    - Stringify, Parse
+
+Promise (sync, async):
+    - sync: Đồng bộ
+    - async: Bất đồng bộ
+
+Callback hell:
+Pyramid of doom
+
+- promise: xử lí thao tác bất động bộ
+trc khi có promise thì sử dụng callback nhưng code nó rối
+dùng promise có từ phiên bản es6 -> sử dụng khắc phục callback hell
+- Để tạo ra promise thì sẽ khai báo 1 biến là object constructor
+Trong đó có chứa executor là 1 hàm có 2 đối số là resolve, reject
+(dạng hàm)
+resolve(): dc gọi khi thành công
+reject(): Dc gọi khi thất bại
+
+biến được truyền vào 2 callback func:
+resolve dc vào .then ...
+
+- 3 trạng thái của promise
+// 1. Pedding
+// 2. rufilled
+// 3. rejected
+
