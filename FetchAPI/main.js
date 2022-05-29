@@ -138,8 +138,8 @@ sleep(1000)
     })
     .then(function(){
         console.log(2)
-        return new Promise((resolve) => {
-            setTimeout(resolve, 1000)
+        return new Promise((resolve, reject) => {
+            reject("Loi em oi");
         })
     })
     .then(function(){
@@ -148,6 +148,41 @@ sleep(1000)
             setTimeout(resolve, 1000)
         })
     })
+    .catch(function(err){
+        console.log(err)
+    })
     .finally(function(){
         console.log("finally")
     })
+
+var promise1 = new Promise(
+    function(resolve, reject){
+        setTimeout(function(){
+            resolve([1])
+        }, 2000)
+    }
+)
+
+var promise2 = new Promise(
+    function(resolve, reject){
+        setTimeout(function(){
+            resolve([2, 3])
+        }, 5000)
+    }
+)
+
+// Hỗ trợ chạy song song đồng thời
+Promise.all([promise1, promise2])
+    .then(function(res){
+        var res1 = res[0]
+        var res2 = res[1]
+        console.log(res1.concat(res2))
+    })
+
+// promise1
+//     .then(function(res){
+//         console.log(res)
+//     })
+//     .catch(function(err){
+//         console.log(err)
+//     })

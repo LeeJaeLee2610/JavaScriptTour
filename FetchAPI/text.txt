@@ -29,3 +29,6 @@ resolve dc vào .then ...
 // 2. rufilled
 // 3. rejected
 
+1. promise.resolve: Luôn đúng và đéo bao h vào catch
+2. promise.reject
+3. promise.all
