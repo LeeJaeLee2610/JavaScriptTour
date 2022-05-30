@@ -9,8 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import lombok.extern.log4j.Log4j;
 
@@ -18,17 +18,18 @@ import lombok.extern.log4j.Log4j;
 @Controller
 public class StudentController {
     @Autowired
-    private StudentRestController studentRestController;
+    private StudentRepository studentRepository;
 
     @GetMapping("/students")
     public String allStudent(Model model){
-        List<Student> listS = studentRestController.getAllStudents();
+        List<Student> listS = studentRepository.findAll();
         model.addAttribute("listS", listS);
-        return "/students";
+        return "students";
     }
 
-    @GetMapping("/index")
-    public String home(){
-        return "/index";
+    @PostMapping("/students")
+    public String addStudent(@ModelAttribute("student") Student student){
+        studentRepository.save(student);
+        return "students";
     }
 }

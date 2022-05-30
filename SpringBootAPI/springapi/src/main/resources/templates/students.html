@@ -10,11 +10,26 @@
 <body>
     <h1>Hello cac pp</h1>
     <div>
-        <ul th:each="s: ${listS}">
-            <li th:text="${s.id}"></li>
-            <li th:text="${s.name}"></li>
-            <li th:text="${s.age}"></li>
+        <h2>Students List</h2>
+        <ul id="list-students">
         </ul>
+    </div>
+    <div>
+        <div>
+            <label for="">Name:</label>
+            <input type="text" name="name">
+        </div>
+        <div>
+            <label for="">Age:</label>
+            <input type="text" name="age">
+        </div>
+        <div>
+            <label for="">Point:</label>
+            <input type="text" name="point">
+        </div>
+        <div>
+            <button id="create">Create</button>
+        </div>
     </div>
     <script th:src="@{/main.js}"></script>
 </body>
