@@ -1,0 +1,31 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Em Cuong",
+      "GPA": 4.3
+    },
+    {
+      "id": 2,
+      "name": "Duc Bui",
+      "GPA": 3.4
+    },
+    {
+      "id": 3,
+      "name": "Hung Dinh",
+      "GPA": 2.5
+    },
+    {
+      "name": "Phùng Đức Cường",
+      "GPA": 6,
+      "id": 4
+    }
+  ],
+  "teachers": [
+    {
+      "id": 1,
+      "name": "Nguyen Manh Son",
+      "age": 40
+    }
+  ]
+}

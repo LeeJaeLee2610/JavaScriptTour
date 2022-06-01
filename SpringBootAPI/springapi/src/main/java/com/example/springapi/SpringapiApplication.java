@@ -27,7 +27,7 @@ public class SpringapiApplication implements CommandLineRunner{
 		// TODO Auto-generated method stub
 		List<Student> listS = studentRepository.findAll();
 		for(Student s:listS){
-			logger.info(s.getName() + " " + s.getAge());
+			logger.info(s.getId() + " " + s.getName() + " " + s.getAge() + " " + s.getPoint());
 		}
 	}
 }

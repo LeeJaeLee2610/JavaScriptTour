@@ -15,6 +15,21 @@ function getStudents(callback){
         .then(callback)
 }
 
+function createStudent(data, callback){
+    var options = {
+        method: 'POST',
+        headers:{
+            'Content-type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    }
+    fetch(getApi, options)
+        .then(function(response){
+            response.json();
+        })
+        .then(callback)
+}
+
 function renderStudents(students){
     var listStudents = document.querySelector("#list-students")
     var htmls = students.map(function(student){
@@ -46,19 +61,4 @@ function handleCreateForm(){
 
         createStudent(formData)
     })
-}
-
-function createStudent(data, callback){
-    var options = {
-        method: 'POST',
-        headers:{
-            'Content-type': 'application/json'
-        },
-        body: JSON.stringify(data)
-    }
-    fetch(getApi, options)
-        .then(function(response){
-            response.json();
-        })
-        .then(callback)
 }
