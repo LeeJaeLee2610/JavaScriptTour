@@ -1,4 +1,5 @@
 var getApi =  "http://localhost:8080/rest/getStudents"
+var postApi =  "http://localhost:8080/rest/addStudent"
 
 function start(){
     getStudents(renderStudents)
@@ -23,7 +24,7 @@ function createStudent(data, callback){
         },
         body: JSON.stringify(data)
     }
-    fetch(getApi, options)
+    fetch(postApi, options)
         .then(function(response){
             response.json();
         })
